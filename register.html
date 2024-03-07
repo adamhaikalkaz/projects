@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTROKITS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="js/myJS.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>RTROKITS</h1></div>
+            <ul class="menu"></ul>
+               <li><a class="active" href="home.html">Home</a></li>
+               <li><a href="aboutme.html">About</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="register.html">Register</a></li>
+               <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="registration-body">
+        <div class="registration">
+            <div class="title">Registration</div>
+            <form name="myForm" action="#" onsubmit="return validateForm()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="fullname" placeholder="Enter your full name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input type="date" name="dob" placeholder="Enter your DOB">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" name="username" placeholder="Enter your username" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="email"  placeholder="Enter your email" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone number</span>
+                        <input type="text" name="phonenumber" placeholder="Enter your phone number" >
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <span class="gender">Male</span>
+                        <input type="radio" name="gender">
+                        <span class="gender">Female</span>
+                        <input type="radio" name="gender">
+                        <span class="gender">Prefer not to say</span>
+                        <input type="radio" name="gender">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="terms-and-conditions" required>
+                        <label for="">I accept the terms and conditions</label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" onclick="matchPassword()" value="Register">
+                </div>
+            </form>
+        </div>
+    </section>

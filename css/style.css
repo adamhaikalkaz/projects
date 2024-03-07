@@ -1,0 +1,279 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+  height: 100%;
+}
+
+.navbar{
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
+  box-shadow: 0px 2px 18px 0 rgba(129 162 182/ 20%);
+}
+
+
+nav {
+    background-color: white;
+}
+  
+header a {
+    float: left;
+}
+  
+header .navbar a{
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 1px 30px;
+    text-decoration: none;
+}
+
+nav a:hover{
+  background-color: whitesmoke;
+}
+
+.home .content .button{
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 80px;
+  background: black;
+  color: #fff;
+  padding: 14.4px 56px;
+  cursor: pointer;
+  font-size: 27.2px;
+}
+
+.home{
+  padding: 32px 30%;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/homee2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home .content{
+  max-width: 800px;
+}
+
+.home .content h1{
+  color: black;
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+
+.home .content p{
+  color: black;
+  font-size: 25px;
+}
+
+.heading{
+  text-align: left;
+  font-size: 20px;
+  color: #333;
+  padding: 40px;
+  margin: 60px;
+  background: rgba(85, 85, 85, 0.05);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.row .column img{
+  width: 700px;
+  height: 500px;
+}
+
+.row .column h2{
+  font-size: 30px;
+  color: #333;
+}
+
+.row .column p{
+  font-size: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  color: rgb(116, 116, 116);
+}
+
+.products{
+  padding: 100px 8%;
+}
+
+.products h1{
+  padding-bottom:50px;
+  padding-left:500px;
+}
+
+.products .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.products .container .box{
+  padding: 0px 20px 10px 20px;
+  background: transparent;
+  box-shadow: 5px 30px 56px rgb(55 55 55 / 12%);
+  position: relative;
+}
+
+.products .container .box img{
+  width: 200px;
+  height: 200px;
+}
+
+.registration-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #666;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  padding: 10px;
+}
+
+.registration{
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.registration .title{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.registration form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box{
+  width: 300px;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.user-details .input-box .details{
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender-details .category{
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+.gender-details .category label{
+  display: flex;
+  align-items: center;
+}
+
+.gender-details .category .dot{
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  margin-right: 10px;
+  border: 5px solid transparent;
+}
+
+form .button{
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.contactusbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  padding: 10px;
+}
+
+.contactus{
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+}
+
+.contact-form-text textarea{
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-button{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
